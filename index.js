@@ -1,10 +1,10 @@
 let filterWater = () => {
-    let input = ["salt", "dirt", "calcite", "uranium", "rubber"]
-    let output = []
+    let input = ["salt", "dirt", "calcite", "uranium", "rubber"];
+    let output = [];
 
     for (i = 0; i < input.length; i++) {
-        if (input[i] === "uranium" || "rubber" || "salt"){
-            output.push(input[i])
+        if (input[i] === "calcite" || "rubber" || "salt"){
+            output.push(input[i]);
         }
     }
 }
@@ -12,12 +12,12 @@ let filterWater = () => {
 document.addEventListener('DOMContentLoaded', () => {
     const filterWater = document.getElementById('waterFilter');
     filterWater.addEventListener('click', () => {
-        let input = ["salt", "dirt", "calcite", "uranium", "rubber"]
-        let output = []
+        let input = ["salt", "dirt", "calcite", "uranium", "rubber"];
+        let output = [];
 
         for (let i = 0; i < input.length; i++) {
             if (input[i] === "uranium" || input[i] === "rubber" || input[i] === "salt"){
-                output.push(input[i])
+                output.push(input[i]);
             }
         }
         console.log(output);
